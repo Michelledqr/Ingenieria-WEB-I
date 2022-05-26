@@ -1,0 +1,88 @@
+
+/*--- General  cuerpo --*/
+    body 
+    {   /* font: 15px arial, helvetica, sans-serif;*/
+    background: #fed;
+    }
+
+/*---- menu --*/
+    /*--- caja menu -*/
+    .menu
+    {   display: flex;
+        min-width: 100%;
+
+    }
+
+    /* -----------Items menu ---*/
+    span a  /*-diseño lineas de texto-*/
+    {   /*-- marco de texto -*/
+        padding: 5px;  margin: 5px auto; 
+        /* -- caja de texto  -*/
+        width: 100px;  border-radius: 5px;
+        background: white;         
+        box-shadow: 0 0 2px 0 rgba(63,31,0,.5);
+        
+        /*-- alineacion individual del texto -*/
+        text-align: center;
+        /*--- posición relativa entre cajas de texto -*/
+        display:inline-block;
+        /*tiempo duración de animación*/
+        transition: .2s;
+        /*-- alineación global menu en caja menu*/
+        margin-left: 0; margin-right: auto;    }
+    span a:hover  /* - animación cursor enfoque activo - */
+    {   transform: rotate(-10deg) scale(1.5);
+    }
+   /* -----------logo menu ---*/
+   .logo
+   {    /*-- alineación global logo en caja logo*/
+        margin-left: auto; margin-right: 0;
+   }
+
+/*---Contenido página productos -----------*/   
+   .contenido
+   {      display: flex; flex-wrap: wrap}
+   @media (max-width: 650px) 
+   { .contenido  {flex-direction: column;}   }
+
+   .tarjeta
+   {    display: flex;
+        flex-direction: column;
+        align-self: center;
+   
+        max-width: 300px; min-width: 100px;
+        height:auto;
+     
+        margin: 5px; box-shadow: 5px;      
+        background: white;         
+        box-shadow: 0 0 2px 0 rgba(63,31,0,.5);
+    }
+
+   .imgproducto
+   {   display: flexbox;
+       max-height: 255px; width:auto;
+       vertical-align: middle; align-self:center ;
+   }
+
+   .nom_producto
+      { text-align: center;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: medium;
+        padding: 5px; box-shadow: 5px;
+      }
+
+   .des_producto
+    {   text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        padding: 5px; box-shadow: 5px;
+    }
+  
+    .click
+    {   background-color: rgb(66, 85, 76);
+        color:aliceblue ;
+        transition:.2s;
+    }
+    .click:hover
+    {    transform: rotate(-10deg) scale(1.5);
+    }
