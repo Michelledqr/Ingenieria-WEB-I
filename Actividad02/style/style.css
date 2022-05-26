@@ -85,9 +85,32 @@
     .click
         {   background-color: rgb(66, 85, 76);
             color:aliceblue ;
+            width:100%;
             transition:.2s;
         }
     .click:hover
         {    transform: rotate(-5deg) scale(1.5);
         }
 
+/*--- Conternido campos formulario ---*/
+    /*---Estructura formulario-*/
+    .formulario
+        {   display:flex; flex-direction: column;
+            align-items: center;
+        }
+    form
+        {   display:flex;flex-direction: column;
+            margin: 5px; padding: 20px;
+            border-radius: 5px;
+            align-items: center;
+            background: rgb(228, 197, 137);
+        }
+    /*--- Campos Formulario ---*/
+    .fila
+        {   width: 100%;
+            box-sizing: border-box;
+        }
+    input
+        {   width: 100%;
+            box-sizing: border-box;
+        }
